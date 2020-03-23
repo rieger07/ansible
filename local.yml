@@ -1,8 +1,8 @@
 - hosts: localhost
-  become: true
+  roles: 
+  - role: gantsign.visual-studio-code
+  become: yes
   tasks:
         - name: Install git
           apt: name=git
-
-        - name: Install vscode
-          apt: name=
+          
